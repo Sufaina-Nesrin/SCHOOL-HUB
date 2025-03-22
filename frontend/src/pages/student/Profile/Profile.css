@@ -1,0 +1,155 @@
+/* img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}Profile.css */
+
+.student-profile-main-container{
+    width: 100%;
+    background-color: var(--base-clr);
+
+
+}
+.student-profile-outer-container{
+    padding: 3rem;
+}
+.student-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color:#cadcec;
+    border-radius: 10px;
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.student-profile-img-section-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.student-profile-img-section-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.student-profile-img-section-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.student-profile-img-section-card span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.student-profile-img-section-card button, .student-profile-container button, .goToAttnd {
+    padding: 5px 20px;
+    font-size: 1rem;
+    background-color: #4b84b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.student-profile-container button{
+    margin-top: 15px;
+}
+
+.student-profile-img-section-card button:hover {
+    background-color: #0056b3;
+}
+
+.student-profile-personal-info {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.student-profile-add-mark{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin:15px 0 0 0;
+}
+
+.student-profile-personal-info span {
+    font-size: 1em;
+    color: #555;
+}
+
+.student-profile-academics {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.student-profile-academics h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.subject-mark {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+.subject {
+    
+    color: #555;
+}
+
+.score {
+    color: #007bff;
+}
+.grade {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.student-profile-chart{
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    height: 400px;
+    margin-inline: auto;
+}
+.student-profile-chart h3{
+    text-align: center;
+    color: rgb(212, 212, 212);
+    margin-bottom: 1rem;
+}
+.student-profile-chart *{
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .student-profile-chart{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+    .student-profile-chart *{
+        width: 100%;
+    }
+}

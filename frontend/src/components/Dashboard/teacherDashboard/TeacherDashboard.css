@@ -1,0 +1,30 @@
+.teacher-dashboard-main-container{
+        padding: 2rem;
+        background-image: url('/back-img.jpg');
+        background-size: cover;  /* Ensures the image covers the entire screen */
+        background-repeat: no-repeat; /* Prevents tiling */
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+}
+.teacher-dashboard-main-container div{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+.teacher-dashboard-main-container span:first-child{
+    color: black;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 2px
+}
+.teacher-dashboard-main-container span:nth-child(2){
+    color: white;
+    font-size: 15px;
+}

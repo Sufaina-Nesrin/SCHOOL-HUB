@@ -1,0 +1,21 @@
+.-view-students-container{
+    color: black;
+    background-color: var(--base-clr);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 10px;
+}
+.-view-students-container h2{
+text-align: center;
+color: #4b84b3;
+padding: 1rem 0;
+}
+
+.not-a-teacher{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

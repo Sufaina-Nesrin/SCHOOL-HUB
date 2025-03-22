@@ -1,0 +1,94 @@
+
+
+/* .layout-main-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto; /* This makes the navbar scrollable if content exceeds its height */
+
+  
+  
+  
+  /* @media (max-width: 800px) {
+   .app-main-container{
+          display: grid;
+          grid-template-columns: 1fr;
+      }  
+      .content {
+        overflow-y: scroll;
+      
+      }
+    } */
+  
+    /* .app-main-container:first-child{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    align-self: start;
+  }
+  .app-main-container:last-child{
+   
+  } */
+
+  .layout-main-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Sidebar (auto) + Main content (1fr) */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto; /* Scrollable navbar for excess content */
+    padding: 10px;
+}
+.content::-webkit-scrollbar {
+  display: none; /* Hides scrollbar */
+}
+.content {
+    overflow: hidden;
+    overflow-y: auto; /* Scrollable main content */
+    
+}
+
+/* Responsive Design for Screens Smaller than 800px */
+@media (max-width: 800px) {
+    .layout-main-container {
+        grid-template-columns: 1fr; /* Stack navbar and content vertically */
+        grid-template-rows: auto 1fr; /* Navbar on top, content below */
+        height: auto; /* Allow height to adapt */
+    }
+
+    .navbar {
+        height: auto; /* Navbar height adjusts to its content */
+        position: relative; /* Remove stickiness for better flow */
+    }
+
+    .content {
+         overflow: hidden;
+        overflow-y: scroll; /* Keep content scrollable */
+       /* Adjust padding for smaller screens */
+    }
+}
+
+/* Further Tweaks for Smaller Devices (e.g., phones, <500px) */
+@media (max-width: 500px) {
+    .navbar {
+        padding: 8px; /* Smaller padding for limited screen space */
+        font-size: 0.9em; /* Slightly reduce font size */
+    }
+
+    .content {
+      overflow: hidden;
+        overflow-y: scroll;
+    }
+}

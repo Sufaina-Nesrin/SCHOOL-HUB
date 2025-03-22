@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /* #cadcec */
+  --base-clr: white;
+  --line-clr: #42434a;
+  --hover-clr: rgb(255, 255, 255);
+  --accent-clr: #5e63ff;
+  --text-clr: rgb(42, 42, 42);
+  --secondary-text-clr: #060505;
+  --input-field-clr: #d4d0d0;
+  --off-white-clr: #4f4f4f;
+  --btn-form-clr: #4b84b3; /* #007bff*/
+  --btn-green-clr: #28a745; /* Green color for the button */
+  --btn-green-hover: #218838; /* Darker green for hover state */
+  --btn-red-clr: #dc3545; /* Red color for the button */
+  --btn-red-hover: #c82333; /* Darker red for hover state */
+  --btn-form-hover: #0056b3;
+}
+/* hr{
+    
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  line-height: 1.5rem;
+}
+/* General form container */
+.form-main-container {
+  background: var(--base-clr);
+  height: 100vh;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.form-main-big-container {
+    background: var(--base-clr);
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0;
+  }
+
+
+
+.the-container {
+  width: 100%;
+}
+.form-with-img-container {
+  width: 90%;
+  margin-inline: auto;
+  position: relative;
+  background-color: white;
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents scrolling of the main container */
+}
+.form-img-container {
+  width: 36%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position it inside .form-main-big-container */
+  bottom: 0; /* Moves it to the bottom */
+  left: 0;
+ 
+}
+.form-img-container img {
+    width: 100%;
+  height: 350px;
+  object-fit: cover;
+  
+}
+.form-container {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  width: 60%;
+  background-color: white;
+  padding: 2rem 0;
+  overflow-y: auto;
+  margin-left: 40%;
+}
+
+
+.blue-button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    /* font-weight: 500; */
+    color: white;
+    font-size: 1rem;
+    background-color: #4b84b3;
+
+}
+
+.form-heading {
+  text-align: center;
+  color: #4b84b3;
+}
+.form-description {
+  text-align: center;
+  display: block;
+  color: var(--secondary-text-clr);
+  margin-bottom: 1.25rem;
+}
+.text-transform{
+  text-transform: capitalize;
+}
+
+/* Label */
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--off-white-clr);
+}
+.form-radio-label {
+  margin-bottom: 5px;
+  color: var(--off-white-clr);
+}
+
+/* Input fields */
+.form-input:not([type="radio"]) {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--input-field-clr);
+  border-radius: 5px;
+  /* background-color: var(--input-field-clr); */
+  color: #4b4b4b;
+  font-size: 1rem;
+}
+.form-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--input-field-clr);
+  border-radius: 5px;
+  /* background-color: var(--input-field-clr);
+    color: #f0f0f0; */
+  font-size: 1rem;
+}
+
+/* Input focus */
+.form-input:focus {
+  outline: none !important;
+  box-shadow: 0 0 5px var(--btn-form-clr);
+}
+
+/* Submit button */
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--btn-form-clr);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  /* margin: 5px 0; */
+  font-weight: 500;
+}
+
+/* Button hover */
+.form-button:hover {
+  background-color: var(--btn-form-hover);
+}
+input[type="radio"] {
+  margin-bottom: 10px;
+}
+.form-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers children horizontally */
+  gap: 10px;
+}
+
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+}

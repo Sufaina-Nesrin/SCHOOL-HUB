@@ -1,0 +1,68 @@
+.add-exam-main-container{
+    color: black;
+    padding: 20px 20px;
+    padding-right: 20px;
+    background-color: var(--base-clr) ;/* Light background color for contrast */
+    min-height: 100vh; /* Full-height container */
+}
+
+.add-exam-inner-container{
+    margin-inline: auto;
+    width: min(40rem, 90%);
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.add-exam-inner-container ol{
+    padding: 10px;
+
+}
+.add-exam-inner-container ol div{
+    padding: 10px;
+    border-bottom: 1px solid rgb(103, 103, 103);
+    display: flex;
+    justify-content: space-between;
+}
+.add-exam-flex-box{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.add-exam-flex-box input{
+    padding: 6px 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(208, 208, 208);
+    outline: none;
+}
+.add-exam-inner-container ol div button{
+    padding: 6px 12px;
+    font-size: 14px;
+   font-weight: 500;
+    border: none;
+    /* background-color: grey; */
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--btn-green-clr);
+}
+.add-exam-inner-container ol div button:hover{
+    background-color: var(--btn-green-hover);
+}
+.add-exam-flex-box button{
+    padding: 6px 12px;
+    font-size: 14px;
+   font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--btn-form-clr);
+}
+.add-exam-flex-box button:hover{
+    background-color: var(--btn-form-hover);
+}

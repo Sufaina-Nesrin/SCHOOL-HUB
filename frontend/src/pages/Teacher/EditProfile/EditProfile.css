@@ -1,0 +1,52 @@
+.edit-profile-main-container {
+    height: 100vh;
+    background-color: var(--base-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .edit-profile-inner-container {
+    padding: 20px;
+    width: min(30.5rem, 80%);
+  }
+ 
+  .edit-profile-inner-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .edit-profile-button-div button {
+    float: right;
+    padding: 5px 12px;
+    outline: none;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .edit-profile-inner-container input {
+    padding: 10px;
+    
+    border-radius: 7px;
+    border: 1px solid grey;
+  }
+  .edit-profile-inner-container label {
+    color:black;
+  }
+  .edit-profile-button-div .edit-btn {
+    background-color: var(--btn-form-clr);
+    color: white;
+  }
+  
+  .edit-profile-button-div .cancel-btn {
+    background-color: var(--btn-red-clr);
+    color: white;
+  }
+  .edit-profile-button-div .cancel-btn:hover{
+    background-color: var(--btn-red-hover);
+  }
+  .edit-profile-button-div .edit-btn:hover{
+    background-color: var(--btn-form-hover);
+  }
+  

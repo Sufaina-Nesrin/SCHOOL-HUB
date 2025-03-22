@@ -1,0 +1,102 @@
+.teacher-profile-main-container{
+    width: 100%;
+    background-color: var(--base-clr);
+
+
+
+}
+.teacher-profile-outer-container{
+    padding: 3rem;
+}
+.teacher-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color:#cadcec;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.teacher-profile-img-section-card {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.teacher-profile-img-section-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.teacher-profile-img-section-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.teacher-profile-img-section-card span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.teacher-profile-img-section-card button,
+.view {
+    padding: 5px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.teacher-profile-img-section-card button:hover {
+    background-color: #0056b3;
+}
+.view{
+    background-color: #0056b3;
+}
+.view:hover {
+    background-color: #007bff;
+}
+
+.teacher-profile-personal-info {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.teacher-profile-personal-info span {
+    font-size: 1em;
+    color: #555;
+}
+.teacher-profile-classes {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.teacher-profile-class-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}

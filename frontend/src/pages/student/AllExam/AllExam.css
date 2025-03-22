@@ -1,0 +1,48 @@
+.all-exam-outer-container{
+    width: 100%;
+    background-color: var(--base-clr);
+    min-height: 100vh;
+}
+.all-exam-container{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 10px;
+    background-color:#cadcec;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: 0px auto;
+}
+.all-exam-container div{
+    min-width: 300px;
+}
+
+.predicted-marks-div{
+    padding: 2rem 0;
+    width: min(90%, 30rem);
+    /* background-color: red; */
+    margin-inline: auto;
+}
+
+.predicted-marks-div ul{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+#btn-prdct{
+    background-color: var(--btn-form-clr);
+    color: white;
+    cursor: pointer;
+    padding: 5px 7px;
+    border-radius: 5px ;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin-inline: auto;
+    display: block;
+    margin-bottom: 10px;
+
+}

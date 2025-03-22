@@ -1,0 +1,104 @@
+/* AddMark.css */
+   
+
+.add-exam-main-container  h2{
+    text-align: center;
+    padding: 15px;
+}
+.add-exam-inner-container {
+    margin-inline: auto;
+    width: min(40rem, 90%);
+    background-color:#cadcec;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove gaps between table borders */
+    font-family: Arial, sans-serif;
+}
+
+table tr {
+    border-bottom: 1px solid #ddd; /* Subtle line between rows */
+}
+
+table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    color:black; /* Dark text color for readability */
+}
+
+table tr:last-child {
+    border-bottom: none; /* Remove border for last row */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in width */
+    transition: border-color 0.3s ease; /* Smooth hover effect */
+}
+
+input[type="number"]:focus {
+    border-color: #007bff; /* Highlighted border on focus */
+    outline: none;
+}
+.button-add-mark {
+    padding: 8px 12px;
+    font-size: 14px;
+   font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 5px;
+}
+
+/* Add Button */
+#add-button-add-mark{
+    background-color: #28a745; /* Green for "Add" */
+    color: white;
+}
+
+#add-button-add-mark:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+/* Edit Button */
+#edit-button-add-mark{
+    background-color: #007bff; /* Yellow for "Edit" */
+    color: white;
+}
+
+#edit-button-add-mark:hover {
+    background-color: #1787ff; /* Darker yellow on hover */
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .add-exam-inner-container {
+        padding: 15px;
+    }
+
+    table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+        padding: 6px;
+    }
+    .button-add-mark {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

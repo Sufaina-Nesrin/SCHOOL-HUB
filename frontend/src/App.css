@@ -1,0 +1,48 @@
+ /* filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+  color: black;
+} */
+/* App.css */
+/* App.css */
+
+.app-main-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto; /* This makes the navbar scrollable if content exceeds its height */
+}
+
+.content {
+  overflow-y: auto; /* Makes the content area scrollable */
+
+}
+
+
+
+@media (max-width: 800px) {
+ .app-main-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+    .content {
+       /* Makes the content area scrollable */
+    
+    }
+  }
+
+  /* .app-main-container:first-child{
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: start;
+}
+.app-main-container:last-child{
+  overflow-y: scroll;
+} */
